@@ -5,6 +5,7 @@
   "main": "just-task.js",
   "private": true,
   "scripts": {
+    "start": "just do-it",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/horchatajs/sondeo-vacaciones/issues"
   },
-  "homepage": "https://github.com/horchatajs/sondeo-vacaciones#readme"
+  "homepage": "https://github.com/horchatajs/sondeo-vacaciones#readme",
+  "devDependencies": {
+    "just-task": "^0.13.1"
+  }
 }
