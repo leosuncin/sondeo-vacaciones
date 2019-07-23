@@ -1,0 +1,22 @@
+{
+  "name": "sondeo-vacaciones",
+  "version": "0.0.0",
+  "description": "Datos digitalizados del sondeo de precios hoteles de playa para vacaciones en El Salvador.",
+  "main": "just-task.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/horchatajs/sondeo-vacaciones.git"
+  },
+  "contributors": [
+    "Jaime Leonardo Suncin Cruz <jaime@suncin.me>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horchatajs/sondeo-vacaciones/issues"
+  },
+  "homepage": "https://github.com/horchatajs/sondeo-vacaciones#readme"
+}
