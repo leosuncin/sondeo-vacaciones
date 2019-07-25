@@ -1,0 +1,11 @@
+<img src="page-4.png" width="1700" height="2200" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Jaime Leonardo Suncin Cruz -->
+<area shape="rect" coords="219,474,1455,1550" alt="La Libertad" target="la-libertad" href="#LaLibertad" />
+<area shape="rect" coords="219,1584,1455,2106" alt="La Paz" target="la-paz" href="#LaPaz" />
+</map>

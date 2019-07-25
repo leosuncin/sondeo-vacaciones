@@ -17,7 +17,7 @@ Aprovechar los datos recopilados por la Defensoria del Consumidor para ofrecer u
 
 ## Requisitos
 
-Para extraer las imágenes del PDF necesito `pdftoppm` que es parte de [poppler](https://poppler.freedesktop.org/).
+Para extraer las imágenes del PDF se necesita `pdftoppm`, que es parte de [poppler](https://poppler.freedesktop.org/).
 
 ```bash
 # Debian, Ubuntu, Linux Mint, y otras distribuciones basadas en Debian/Ubuntu
@@ -38,3 +38,7 @@ sudo zypper install poppler-tools
 # Arch linux
 sudo pacman -S poppler
 ```
+
+## Mapa de imagen
+
+Los mapas de imagen fueron creados con [GIMP](https://docs.gimp.org/2.10/es/plug-in-imagemap.html)
