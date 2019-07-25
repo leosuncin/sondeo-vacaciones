@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/horchatajs/sondeo-vacaciones#readme",
   "devDependencies": {
-    "just-task": "^0.13.1"
+    "@types/sharp": "^0.22.2",
+    "just-task": "^0.13.1",
+    "sharp": "^0.22.1"
   }
 }
