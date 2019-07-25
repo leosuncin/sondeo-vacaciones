@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/sharp": "^0.22.2",
     "just-task": "^0.13.1",
+    "node-tesseract-ocr": "^0.1.0",
     "sharp": "^0.22.1"
   }
 }

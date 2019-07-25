@@ -2,6 +2,7 @@
 
 *.pdf
 *.png
+*.txt
 
 ### Node ###
 # Logs

@@ -5,6 +5,7 @@ const https = require("https");
 const { promisify } = require("util");
 const { exec } = require("child_process");
 const sharp = require("sharp");
+const tesseract = require("node-tesseract-ocr");
 
 const DEFAULT_REMOTE_PDF =
   "https://www.defensoria.gob.sv/wp-content/uploads/2015/04/QQ-Hoteles.pdf";
@@ -101,4 +102,50 @@ task(
   )
 );
 
-task("do-it", series("download", "extract-images", "crop-images"));
+function extractText(input, output) {
+  const config = {
+    lang: "spa",
+    oem: 1,
+    psm: 3
+  };
+
+  return async () => {
+    const text = await tesseract.recognize(input, config);
+    fs.writeFileSync(output, text, "utf-8");
+  };
+}
+
+task(
+  "extract-text:min-price-la-libertad",
+  extractText("min-price-la-libertad.png", "min-price-la-libertad.txt")
+);
+
+task(
+  "extract-text:min-price-la-paz",
+  extractText("min-price-la-paz.png", "min-price-la-paz.txt")
+);
+
+task(
+  "extract-text:max-price-la-libertad",
+  extractText("max-price-la-libertad.png", "max-price-la-libertad.txt")
+);
+
+task(
+  "extract-text:max-price-la-paz",
+  extractText("max-price-la-paz.png", "max-price-la-paz.txt")
+);
+
+task(
+  "extract-text",
+  series(
+    "extract-text:min-price-la-libertad",
+    "extract-text:min-price-la-paz",
+    "extract-text:max-price-la-libertad",
+    "extract-text:max-price-la-paz"
+  )
+);
+
+task(
+  "do-it",
+  series("download", "extract-images", "crop-images", "extract-text")
+);
